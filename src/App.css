@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(14px, -10px) scale(1.06); }
+}
+.blob { animation: blob 22s ease-in-out infinite; }
+.blob-delay { animation-delay: 1.2s; }

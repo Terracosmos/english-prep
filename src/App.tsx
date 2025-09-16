@@ -2,9 +2,13 @@ import { useEffect, useMemo, useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
+import ProgressBar from "./components/ProgressBar";
+import Background from "./components/Background";
+
 import { vocab, glossary, type VocabItem } from "./data/vocab";
 import { expressions, exprGlossary, type ExpressionItem } from "./data/expressions";
 import { definitions, type DefinitionItem } from "./data/definitions";
+
 import { BookOpen, ArrowLeft, Trophy, Repeat2, Home, NotebookPen, PlayCircle } from "lucide-react";
 
 type ContentMode = "mots" | "expressions" | "definitions";
@@ -64,14 +68,13 @@ export default function App() {
 
   const max = corpusSize(content);
 
+  // timer (examen)
   const totalSecondsQuiz = useMemo(() => {
     if (screen !== "quiz" || mode !== "examen") return 0;
     return session.length * SECONDS_PER_QUESTION;
   }, [screen, mode, session.length]);
-
   const [timeLeft, setTimeLeft] = useState<number>(totalSecondsQuiz);
   useEffect(() => { setTimeLeft(totalSecondsQuiz); }, [totalSecondsQuiz]);
-
   useEffect(() => {
     if (screen !== "quiz" || mode !== "examen") return;
     const id = setInterval(() => {
@@ -114,6 +117,7 @@ export default function App() {
 
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
+        <Background />
         <div className="w-full max-w-2xl space-y-6 text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="inline-flex items-center gap-2 text-3xl font-semibold text-indigo-600">
@@ -237,6 +241,7 @@ export default function App() {
 
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
+        <Background />
         <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur rounded-2xl ring-1 ring-slate-200/70 dark:ring-white/10 shadow p-6 space-y-6 w-full max-w-xl text-center text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="inline-flex items-center gap-2 text-2xl font-semibold text-indigo-600">
@@ -273,6 +278,7 @@ export default function App() {
 
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
+        <Background />
         <div className="w-full max-w-3xl space-y-4 text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="inline-flex items-center gap-2 text-2xl font-semibold text-indigo-600">
@@ -352,6 +358,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 flex items-center justify-center p-6 pb-16">
+      <ProgressBar value={session.length ? i / session.length : 0} />
+      <Background />
       <div className="w-full max-w-2xl space-y-4">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-2">

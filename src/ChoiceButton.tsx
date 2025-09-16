@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import type { ComponentPropsWithoutRef } from "react";
 
 type Status = "idle" | "correct" | "wrong";
@@ -6,12 +6,14 @@ type Props = ComponentPropsWithoutRef<typeof motion.button> & { status?: Status 
 
 const shake = [0, -8, 8, -6, 6, -4, 4, -2, 2, 0];
 
-const variants = {
+const variants: Variants = {
   idle: { scale: 1, x: 0 },
-  hover: { scale: 1.02, transition: { type: "spring", stiffness: 500, damping: 30 } },
-  tap: { scale: 0.98, transition: { type: "spring", stiffness: 500, damping: 30 } },
+  // v12 : on évite "type: 'spring'" (plus typé). Durées linéaires = safe.
+  hover: { scale: 1.02, transition: { duration: 0.15 } },
+  tap:   { scale: 0.98, transition: { duration: 0.10 } },
   correct: { scale: 1 },
-  wrong: { x: shake, transition: { duration: 0.32, ease: "easeInOut" } },
+  // v12 : 'ease' prend un bezier/fn, pas "easeInOut" en string.
+  wrong: { x: shake, transition: { duration: 0.32, ease: [0.36, 0.66, 0.04, 1] } },
 };
 
 export default function ChoiceButton({ className = "", status = "idle", ...props }: Props) {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ChoiceButton from "../ChoiceButton";
+import { CircleHelp, ArrowRight, Info } from "lucide-react";
 
 type Status = "idle" | "correct" | "wrong";
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
   correctIndex: number;
   glossary?: Record<string, string>;
   exam?: boolean;
-  onNext: (ok: boolean, selectedIndex: number) => void; // mode révision déjà en place
+  onNext: (ok: boolean, selectedIndex: number) => void;
 };
 
 export default function QuestionCard({
@@ -58,8 +59,12 @@ export default function QuestionCard({
   const correctFR = glossary?.[correctEN];
 
   return (
-    <div className="rounded-2xl bg-white dark:bg-slate-800 shadow p-6 space-y-4 text-slate-900 dark:text-slate-100">
-      <div className="text-sm text-slate-500 dark:text-slate-400">{exam ? "Examen" : "Question"}</div>
+    <div className="rounded-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur ring-1 ring-slate-200/70 dark:ring-white/10 shadow p-6 space-y-4 text-slate-900 dark:text-slate-100">
+      <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+        <CircleHelp size={16} aria-hidden />
+        <span>{exam ? "Examen" : "Question"}</span>
+      </div>
+
       <div className="text-2xl font-semibold whitespace-pre-line">{prompt}</div>
 
       <div className="grid gap-3">
@@ -78,9 +83,11 @@ export default function QuestionCard({
 
       {!exam && wrong && (
         <div role="status" aria-live="polite"
-             className="rounded-xl border border-rose-300 dark:border-rose-400/40
-                        bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 p-3">
-          <div className="font-medium mb-1">Explication</div>
+             className="rounded-xl border border-rose-300/70 dark:border-rose-400/30
+                        bg-rose-50/70 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 p-3">
+          <div className="flex items-center gap-2 font-medium mb-1">
+            <Info size={16} aria-hidden /> Explication
+          </div>
           <div className="text-sm">
             Vous avez choisi <strong>{chosenEN}</strong>
             {chosenFR ? <> — en français : <em>« {chosenFR} »</em></> : null}.
@@ -97,15 +104,14 @@ export default function QuestionCard({
           disabled={!locked}
           onClick={() => onNext((selected ?? -1) === correctIndex, selected!)}
           className={
-            "px-4 py-2 rounded-lg text-sm font-medium " +
+            "group inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium " +
             (locked
-              ? "group bg-indigo-600 text-white hover:bg-indigo-500"
+              ? "bg-indigo-600 text-white hover:bg-indigo-500"
               : "bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-300 cursor-not-allowed")
           }
         >
-          <span className="inline-flex items-center gap-2">
-            Suivant <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
-          </span>
+          Suivant
+          <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" aria-hidden />
         </button>
       </div>
     </div>

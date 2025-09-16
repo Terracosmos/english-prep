@@ -4,204 +4,208 @@
 export type ExpressionItem = { fr: string; en: string };
 export const expressions: ExpressionItem[] = [
   {
-    "fr": "mettre en production",
-    "en": "deploy to production"
+    "fr": "Mettre en œuvre les solutions aux problématiques techniques",
+    "en": "Implement solutions to technical problems"
   },
   {
-    "fr": "faire un déploiement bleu vert",
-    "en": "perform a blue green deployment"
+    "fr": "Choisir avec discernement des architectures performantes et sécurisées",
+    "en": "Choose high-performance and secure architectures"
   },
   {
-    "fr": "passer en maintenance",
-    "en": "enter maintenance mode"
+    "fr": "Mener à bien les différentes évolutions du SI",
+    "en": "Carry out the various developments in IS"
   },
   {
-    "fr": "redémarrer un service",
-    "en": "restart a service"
+    "fr": "Respecter les contraintes de qualité de coûts et de délais",
+    "en": "Meet quality, cost and time constraints"
   },
   {
-    "fr": "arrêter un service",
-    "en": "stop a service"
+    "fr": "Être l’expert des infrastructures techniques de son SI",
+    "en": "Be the expert on the technical infrastructure of your IS"
   },
   {
-    "fr": "recharger la configuration",
-    "en": "reload configuration"
+    "fr": "Piloter un projet d’infrastructure systèmes et réseaux",
+    "en": "Lead a systems and networks infrastructure project"
   },
   {
-    "fr": "mettre à jour",
-    "en": "update"
+    "fr": "Recueillir analyser et formaliser les besoins systèmes et réseaux de l’entreprise",
+    "en": "Collect analyze and formalize the company's systems and networks needs"
   },
   {
-    "fr": "corriger un bug",
-    "en": "fix a bug"
+    "fr": "Assurer le maintien en condition opérationnelle du réseau et de l’architecture système de l’entreprise",
+    "en": "Maintain the operational condition of the company's network and system architecture"
   },
   {
-    "fr": "ouvrir un ticket",
-    "en": "open a ticket"
+    "fr": "Construire un cahier des charges",
+    "en": "Build specifications"
   },
   {
-    "fr": "clôturer un ticket",
-    "en": "close a ticket"
+    "fr": "Modéliser l’architecture systèmes et réseaux",
+    "en": "Modeling systems and networks architecture"
   },
   {
-    "fr": "documenter une procédure",
-    "en": "document a procedure"
+    "fr": "Valider concevoir et mettre en œuvre les infrastructures systèmes et réseaux",
+    "en": "Validate design and implement systems and networks infrastructure"
   },
   {
-    "fr": "escalader un incident",
-    "en": "escalate an incident"
+    "fr": "Communiquer et promouvoir un projet informatique",
+    "en": "Communicate and promote a computer project"
   },
   {
-    "fr": "résoudre un incident",
-    "en": "resolve an incident"
+    "fr": "Manager le service informatique et ses projets",
+    "en": "Manage IT and its projects"
   },
   {
-    "fr": "analyser la cause racine",
-    "en": "perform root cause analysis"
+    "fr": "Maintenir et sécuriser les infrastructures informatiques",
+    "en": "Maintain and secure IT infrastructure"
   },
   {
-    "fr": "rédiger un post mortem",
-    "en": "write a postmortem"
+    "fr": "Analyser l’adéquation logiciel matériel et SI avec les besoins de l’entreprise",
+    "en": "Analyze how well software, hardware and the wider IT system fit the business needs"
   },
   {
-    "fr": "effectuer une sauvegarde",
-    "en": "perform a backup"
+    "fr": "Rédiger les besoins pour les nouveaux systèmes informatiques",
+    "en": "Write requirements for new IT systems"
   },
   {
-    "fr": "restaurer une sauvegarde",
-    "en": "restore a backup"
+    "fr": "Aider à la mise en œuvre de systèmes informatiques",
+    "en": "Help implement IT systems"
   },
   {
-    "fr": "vérifier l'intégrité des données",
-    "en": "verify data integrity"
+    "fr": "Surveiller l’efficacité des systèmes informatiques",
+    "en": "Monitor the effectiveness of IT systems"
   },
   {
-    "fr": "chiffrer les données",
-    "en": "encrypt data"
+    "fr": "Animer une équipe",
+    "en": "Lead a team"
   },
   {
-    "fr": "déchiffrer les données",
-    "en": "decrypt data"
+    "fr": "Accroître la performance et la réactivité de l’entreprise",
+    "en": "Increase the company's performance and responsiveness"
   },
   {
-    "fr": "accorder un accès",
-    "en": "grant access"
+    "fr": "Écouter analyser et rédiger les besoins",
+    "en": "Listen analyze and write needs"
   },
   {
-    "fr": "révoquer un accès",
-    "en": "revoke access"
+    "fr": "Être garant de la pérennité et de l’évolution des solutions",
+    "en": "Guarantee the sustainability and evolution of solutions"
   },
   {
-    "fr": "authentifier un utilisateur",
-    "en": "authenticate a user"
+    "fr": "Satisfaire les attentes du client",
+    "en": "Meet client expectations"
   },
   {
-    "fr": "autoriser une requête",
-    "en": "authorize a request"
+    "fr": "Analyser et identifier tous les problèmes potentiels",
+    "en": "Analyze and identify any potential problems"
   },
   {
-    "fr": "surveiller les logs",
-    "en": "monitor logs"
+    "fr": "Avoir de solides compétences pour le travail en équipe",
+    "en": "Have strong team-working skills"
   },
   {
-    "fr": "analyser des métriques",
-    "en": "analyze metrics"
+    "fr": "Diriger des projets collaboratifs",
+    "en": "Lead collaborative projects"
   },
   {
-    "fr": "tailer un fichier de log",
-    "en": "tail a log file"
+    "fr": "Définir les étapes clés du cycle de vie du projet",
+    "en": "Define key lifecycle milestones for the project"
   },
   {
-    "fr": "déployer via pipeline ci",
-    "en": "deploy via ci pipeline"
+    "fr": "Être en mesure de gérer une liste de problèmes ou d’améliorations",
+    "en": "Be able to manage a list of issues or improvements"
   },
   {
-    "fr": "Déclencher un pipeline",
-    "en": "trigger a pipeline"
+    "fr": "Connecter différents appareils pour former des réseaux rapides et efficaces",
+    "en": "Connect different devices together to form fast and efficient networks"
   },
   {
-    "fr": "annuler un pipeline",
-    "en": "cancel a pipeline"
+    "fr": "Installer et configurer des réseaux et des systèmes informatiques",
+    "en": "Install and configure computer networks and systems"
   },
   {
-    "fr": "exécuter des tests unitaires",
-    "en": "run unit tests"
+    "fr": "Consulter les clients",
+    "en": "Consult with clients"
   },
   {
-    "fr": "exécuter des tests d'intégration",
-    "en": "run integration tests"
+    "fr": "Spécifier les besoins du système",
+    "en": "Specify system requirements"
   },
   {
-    "fr": "effectuer un test de charge",
-    "en": "run a load test"
+    "fr": "Concevoir des solutions",
+    "en": "Design solutions"
   },
   {
-    "fr": "purger le cache",
-    "en": "purge the cache"
+    "fr": "Budgétiser l’équipement",
+    "en": "Budget for equipment"
   },
   {
-    "fr": "invalider le cache",
-    "en": "invalidate the cache"
+    "fr": "Assembler de nouveaux systèmes",
+    "en": "Assemble new systems"
   },
   {
-    "fr": "vider un bucket",
-    "en": "empty a bucket"
+    "fr": "Maintenir les logiciels et le matériel existants",
+    "en": "Maintain existing software and hardware"
   },
   {
-    "fr": "stocker des fichiers dans un bucket",
-    "en": "store files in a bucket"
+    "fr": "Mettre à niveau les logiciels et le matériel obsolètes",
+    "en": "Upgrade obsolete software and hardware"
   },
   {
-    "fr": "créer une instance",
-    "en": "create an instance"
+    "fr": "Surveiller les réseaux et les systèmes informatiques",
+    "en": "Monitor computer networks and systems"
   },
   {
-    "fr": "supprimer une instance",
-    "en": "delete an instance"
+    "fr": "Identifier comment améliorer les performances",
+    "en": "Identify how performance can be improved"
   },
   {
-    "fr": "augmenter la taille d'une instance",
-    "en": "increase instance size"
+    "fr": "Travailler avec le personnel de support informatique",
+    "en": "Work with IT support staff"
   },
   {
-    "fr": "réduire la taille d'une instance",
-    "en": "decrease instance size"
+    "fr": "Fournir l’administration et le support du réseau",
+    "en": "Provide network administration and support"
   },
   {
-    "fr": "attacher un disque",
-    "en": "attach a disk"
+    "fr": "Rédiger et mettre à jour procédures et consignes d’exploitation / documentation",
+    "en": "Write and update operating and documentation procedures and instructions"
   },
   {
-    "fr": "détacher un disque",
-    "en": "detach a disk"
+    "fr": "Effectuer un suivi des équipements",
+    "en": "Track equipment"
   },
   {
-    "fr": "faire un snapshot",
-    "en": "take a snapshot"
+    "fr": "Sensibiliser les utilisateurs pour optimiser leur utilisation",
+    "en": "Raise awareness among users to optimize their use"
   },
   {
-    "fr": "créer une alerte",
-    "en": "create an alert"
+    "fr": "Conseiller la DSI sur l’utilisation des ressources du système",
+    "en": "Advise the CIO on the use of system resources"
   },
   {
-    "fr": "paramétrer une alerte",
-    "en": "configure an alert"
+    "fr": "Garantir l’optimisation des ressources systèmes",
+    "en": "Ensure optimization for system resources"
   },
   {
-    "fr": "basculer sur le serveur de secours",
-    "en": "fail over to the standby server"
+    "fr": "Assurer une veille technologique",
+    "en": "Ensure a technological watch"
   },
   {
-    "fr": "revenir sur le serveur principal",
-    "en": "fail back to the primary server"
+    "fr": "Accompagner la stratégie de l’entreprise",
+    "en": "Support the company's strategy"
   },
   {
-    "fr": "déployer une correction à chaud",
-    "en": "deploy a hotfix"
+    "fr": "Se tenir informé des tendances en évolution rapide",
+    "en": "Keep up to date with fast-changing trends"
   },
   {
-    "fr": "mettre hors service une application",
-    "en": "decommission an application"
+    "fr": "Être en mesure de s’adapter aux différentes situations",
+    "en": "Be able to adapt oneself to different situations"
+  },
+  {
+    "fr": "Rechercher diagnostiquer les bugs",
+    "en": "Troubleshooting"
   }
 ];
 

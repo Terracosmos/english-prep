@@ -30,7 +30,11 @@ export default function ChoiceButton({ className = "", status = "idle", ...props
       animate={status}
       whileHover={status === "idle" ? "hover" : undefined}
       whileTap={status === "idle" ? "tap" : undefined}
-      className={"w-full rounded-2xl bg-white shadow p-4 text-left hover:shadow-md " + ring + " " + className}
+      className={
+        "w-full rounded-2xl bg-white dark:bg-slate-800 shadow p-4 text-left hover:shadow-md " +
+        "text-slate-900 dark:text-slate-100 " +
+        ring + " " + className
+      }
       {...props}
     />
   );

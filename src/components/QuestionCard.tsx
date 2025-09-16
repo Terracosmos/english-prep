@@ -5,10 +5,10 @@ type Status = "idle" | "correct" | "wrong";
 type Props = {
   prompt: string;
   choices: [string, string, string, string];
-  correctIndex: number;       // 0..3
+  correctIndex: number;
   glossary?: Record<string, string>;
   exam?: boolean;
-  onNext: (res: { ok: boolean; selected: number }) => void; // <- renvoie aussi l'index choisi
+  onNext: (ok: boolean, selectedIndex: number) => void; // mode révision déjà en place
 };
 
 export default function QuestionCard({
@@ -26,16 +26,10 @@ export default function QuestionCard({
   function choose(i: number) {
     if (locked) return;
     setSelected(i);
-
-    if (exam) {
-      setStates(["idle", "idle", "idle", "idle"]);
-    } else {
-      const ok = i === correctIndex;
-      setStates(states.map((_, idx) => (idx === i ? (ok ? "correct" : "wrong") : "idle")));
-    }
+    if (exam) setStates(["idle", "idle", "idle", "idle"]);
+    else setStates(states.map((_, idx) => (idx === i ? (i === correctIndex ? "correct" : "wrong") : "idle")));
   }
 
-  // Raccourcis 1–4 puis Entrée
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!locked) {
@@ -43,20 +37,19 @@ export default function QuestionCard({
         if (e.key in map) { e.preventDefault(); choose(map[e.key]); }
       } else if (e.key === "Enter") {
         e.preventDefault();
-        onNext({ ok: (selected ?? -1) === correctIndex, selected: selected ?? -1 });
+        onNext(selected! === correctIndex, selected!);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [locked, selected, correctIndex, onNext]);
 
-  // Reset à chaque nouvelle question
   useEffect(() => {
     setSelected(null);
     setStates(["idle", "idle", "idle", "idle"]);
   }, [prompt]);
 
-  const wrong = !exam && selected !== null && selected !== correctIndex;
+  const wrong = !exam && locked && selected !== null && selected !== correctIndex;
   const chosen = selected ?? -1;
 
   const chosenEN = chosen >= 0 ? choices[chosen] : "";
@@ -65,8 +58,8 @@ export default function QuestionCard({
   const correctFR = glossary?.[correctEN];
 
   return (
-    <div className="rounded-2xl bg-white shadow p-6 space-y-4">
-      <div className="text-sm text-slate-500">{exam ? "Examen" : "Question"}</div>
+    <div className="rounded-2xl bg-white dark:bg-slate-800 shadow p-6 space-y-4 text-slate-900 dark:text-slate-100">
+      <div className="text-sm text-slate-500 dark:text-slate-400">{exam ? "Examen" : "Question"}</div>
       <div className="text-2xl font-semibold whitespace-pre-line">{prompt}</div>
 
       <div className="grid gap-3">
@@ -84,11 +77,14 @@ export default function QuestionCard({
       </div>
 
       {!exam && wrong && (
-        <div role="status" aria-live="polite" className="rounded-xl border border-rose-300 bg-rose-50 text-rose-700 p-3">
+        <div role="status" aria-live="polite"
+             className="rounded-xl border border-rose-300 dark:border-rose-400/40
+                        bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 p-3">
           <div className="font-medium mb-1">Explication</div>
           <div className="text-sm">
             Vous avez choisi <strong>{chosenEN}</strong>
-            {chosenFR ? <> — <em>« {chosenFR} »</em></> : null}.<br />
+            {chosenFR ? <> — en français : <em>« {chosenFR} »</em></> : null}.
+            <br />
             La bonne réponse est <strong>{correctEN}</strong>
             {correctFR ? <> — <em>« {correctFR} »</em></> : null}.
           </div>
@@ -96,15 +92,15 @@ export default function QuestionCard({
       )}
 
       <div className="flex items-center justify-between pt-2">
-        <p className="text-xs text-slate-500">Astuce : 1–4 pour répondre, Entrée pour « Suivant »</p>
+        <p className="text-xs text-slate-500 dark:text-slate-400">Astuce : 1–4 pour répondre, Entrée pour « Suivant »</p>
         <button
-          disabled={selected === null}
-          onClick={() => onNext({ ok: (selected ?? -1) === correctIndex, selected: selected ?? -1 })}
+          disabled={!locked}
+          onClick={() => onNext((selected ?? -1) === correctIndex, selected!)}
           className={
             "px-4 py-2 rounded-lg text-sm font-medium " +
-            (selected !== null
+            (locked
               ? "group bg-indigo-600 text-white hover:bg-indigo-500"
-              : "bg-slate-200 text-slate-500 cursor-not-allowed")
+              : "bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-300 cursor-not-allowed")
           }
         >
           <span className="inline-flex items-center gap-2">

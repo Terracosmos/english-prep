@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import ThemeToggle from "./components/ThemeToggle";
+import Footer from "./components/Footer";
 import { vocab, glossary, type VocabItem } from "./data/vocab";
 import { expressions, exprGlossary, type ExpressionItem } from "./data/expressions";
 import { definitions, type DefinitionItem } from "./data/definitions";
@@ -116,7 +117,7 @@ export default function App() {
     const notEnough = max < 4;
 
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
         <div className="w-full max-w-2xl space-y-6 text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="text-3xl font-semibold text-indigo-600">English Prep</h1>
@@ -224,6 +225,7 @@ export default function App() {
             )}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -235,7 +237,7 @@ export default function App() {
     const wrongs = answers.filter(a => a.selectedIndex !== a.q.correctIndex);
 
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 space-y-6 w-full max-w-xl text-center text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="text-2xl font-semibold text-indigo-600">English Prep</h1>
@@ -258,6 +260,7 @@ export default function App() {
             </button>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -268,7 +271,7 @@ export default function App() {
     const g = content === "mots" ? glossary : content === "expressions" ? exprGlossary : undefined;
 
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex items-center justify-center p-6 pb-16">
         <div className="w-full max-w-3xl space-y-4 text-slate-900 dark:text-slate-100">
           <header className="flex items-center justify-between">
             <h1 className="text-2xl font-semibold text-indigo-600">Révision</h1>
@@ -328,6 +331,7 @@ export default function App() {
             </>
           )}
         </div>
+        <Footer />
       </div>
     );
   }
@@ -344,7 +348,7 @@ export default function App() {
   const low = mode === "examen" && totalSecondsQuiz > 0 && timeLeft <= Math.max(10, Math.floor(totalSecondsQuiz * 0.1));
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 flex items-center justify-center p-6 pb-16">
       <div className="w-full max-w-2xl space-y-4">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -376,6 +380,7 @@ export default function App() {
           onNext={next}
         />
       </div>
+      <Footer />
     </div>
   );
 }

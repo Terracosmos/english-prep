@@ -40,7 +40,7 @@ export const vocab: VocabItem[] = [
     ]
   },
   {
-    "fr": "Service",
+    "fr": "Service d’assistance",
     "en": [
       "Help desk"
     ]
@@ -54,8 +54,7 @@ export const vocab: VocabItem[] = [
   {
     "fr": "Installer / Désinstaller",
     "en": [
-      "To install",
-      "To uninstall"
+      "To install / To uninstall"
     ]
   },
   {
@@ -67,8 +66,7 @@ export const vocab: VocabItem[] = [
   {
     "fr": "Surveillance",
     "en": [
-      "Monitoring",
-      "Supervision"
+      "Monitoring / Supervision"
     ]
   },
   {
@@ -110,8 +108,7 @@ export const vocab: VocabItem[] = [
   {
     "fr": "Serveur",
     "en": [
-      "Server",
-      "Host"
+      "Server / Host"
     ]
   },
   {
@@ -153,8 +150,7 @@ export const vocab: VocabItem[] = [
   {
     "fr": "Restauration des données",
     "en": [
-      "Data recovery",
-      "restoration"
+      "Data recovery / restoration"
     ]
   },
   {
@@ -197,6 +193,24 @@ export const vocab: VocabItem[] = [
     "fr": "Equipement téléphonique",
     "en": [
       "Phone equipment"
+    ]
+  },
+  {
+    "fr": "Gestion des accès",
+    "en": [
+      "Access management"
+    ]
+  },
+  {
+    "fr": "Bande passante",
+    "en": [
+      "Bandwidth"
+    ]
+  },
+  {
+    "fr": "Système de messagerie collaborative",
+    "en": [
+      "Collaborative messaging system"
     ]
   },
   {
@@ -244,8 +258,7 @@ export const vocab: VocabItem[] = [
   {
     "fr": "Microprocesseur",
     "en": [
-      "Microprocessor",
-      "Microchip"
+      "Microprocessor / Microchip"
     ]
   },
   {
@@ -285,27 +298,9 @@ export const vocab: VocabItem[] = [
     ]
   },
   {
-    "fr": "Protocole",
+    "fr": "Pile de protocoles",
     "en": [
-      "Protocol"
-    ]
-  },
-  {
-    "fr": "Pare-feu",
-    "en": [
-      "Firewall"
-    ]
-  },
-  {
-    "fr": "Nom d’utilisateur",
-    "en": [
-      "Username"
-    ]
-  },
-  {
-    "fr": "Mot de passe",
-    "en": [
-      "Password"
+      "Protocol stack"
     ]
   }
 ];

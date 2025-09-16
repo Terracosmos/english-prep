@@ -4,203 +4,203 @@
 export type DefinitionItem = { def: string; term: string; synonyms?: string[] };
 export const definitions: DefinitionItem[] = [
   {
-    "def": "A copy of data stored separately to enable recovery after loss or corruption.",
-    "term": "backup"
+    "def": "Malicious action that involves deliberately using the address of another system instead of its own.",
+    "term": "Address spoofing"
   },
   {
-    "def": "A network security system that monitors and controls traffic based on predefined rules.",
-    "term": "firewall"
+    "def": "Network of zombie PCs remotely controlled by a hacker using bots to launch mass attacks.",
+    "term": "Botnet"
   },
   {
-    "def": "A computer that provides services or resources to other computers over a network.",
-    "term": "server"
+    "def": "Exhaustive search method that tests all possible combinations to find a password or key.",
+    "term": "Bruteforce"
   },
   {
-    "def": "A device that forwards data packets between networks.",
-    "term": "router"
+    "def": "Technique exploiting a vulnerability where a program does not properly verify the size of data it manipulates.",
+    "term": "Buffer overflow"
   },
   {
-    "def": "A device that connects devices within the same network and forwards frames.",
-    "term": "switch"
+    "def": "A program that allows people to receive recognition and compensation after reporting bugs, anomalies, exploits and vulnerabilities.",
+    "term": "Bug bounty"
   },
   {
-    "def": "A formal set of rules that define how data is transmitted and received.",
-    "term": "protocol"
+    "def": "Cryptographic transformation of data producing a cryptogram.",
+    "term": "Encryption"
   },
   {
-    "def": "The process of encoding information so that only authorized parties can access it.",
-    "term": "encryption"
+    "def": "Hacking tool used to decode encrypted passwords.",
+    "term": "Crack"
   },
   {
-    "def": "The process of verifying the identity of a user or system.",
-    "term": "authentication"
+    "def": "Parallelization of denial-of-service attacks carried out by multiple systems against a single victim system.",
+    "term": "Denial of service attack (DDoS)"
   },
   {
-    "def": "A unique numerical label assigned to a device connected to a network.",
-    "term": "IP address"
+    "def": "Attack that sends a large stream of data or packets to saturate a victim.",
+    "term": "Flood"
   },
   {
-    "def": "A human-readable name that maps to an IP address.",
-    "term": "domain name"
+    "def": "Attack that targets database-backed sites by passing parameters through SQL queries.",
+    "term": "SQL injection"
   },
   {
-    "def": "Software that manages hardware resources and provides services for applications.",
-    "term": "operating system"
+    "def": "Software or hardware used by a malicious user to capture what a person is typing on the keyboard.",
+    "term": "Key loggers"
   },
   {
-    "def": "A system that organizes, stores, and retrieves structured information.",
-    "term": "database"
+    "def": "Malicious software that massively sends e-mail automatically without human intervention.",
+    "term": "Mailbot"
   },
   {
-    "def": "A component that distributes incoming traffic across multiple servers.",
-    "term": "load balancer"
+    "def": "Fraudulent technique used by hackers to solicit sensitive personal or confidential information from Internet users.",
+    "term": "Phishing"
   },
   {
-    "def": "Design that minimizes downtime through redundancy and failover.",
-    "term": "high availability"
+    "def": "Unsolicited electronic communication, massively sent for advertising or dishonest purposes.",
+    "term": "Spam"
   },
   {
-    "def": "To increase resources (CPU/RAM/instances) on a system to handle greater load.",
-    "term": "scale up"
+    "def": "An extortion form imposed by malicious code on a user of the system.",
+    "term": "Ransomware"
   },
   {
-    "def": "To revert a system or deployment to a previous working state.",
-    "term": "roll back"
+    "def": "Any program or set of programs used to conceal activity, malicious or not, on a machine.",
+    "term": "Rootkit"
   },
   {
-    "def": "To permanently retire a system or service from production.",
-    "term": "decommission"
+    "def": "Creates a large number of processes very quickly in order to saturate the process table of the operating system.",
+    "term": "Fork bomb"
   },
   {
-    "def": "An unplanned interruption or reduction in the quality of an IT service.",
-    "term": "incident"
+    "def": "Seemingly useful and harmless program with hidden code to collect, exploit, falsify or destroy data illegally.",
+    "term": "Trojan horse"
   },
   {
-    "def": "Records produced by applications or systems describing events or errors.",
-    "term": "logs"
+    "def": "Weakness in security procedures, administrative controls, internal controls, and others.",
+    "term": "Vulnerability"
   },
   {
-    "def": "The practice of observing systems and metrics to detect issues.",
-    "term": "monitoring"
+    "def": "Image-like tracker on a web page that measures traffic or collects information about the user.",
+    "term": "Web bug"
   },
   {
-    "def": "An interface that allows software components to communicate using defined requests and responses.",
-    "term": "API"
+    "def": "Program reproducing from machine to machine through network connections and information systems when it spreads.",
+    "term": "Worm"
   },
   {
-    "def": "A small, independently deployable service that owns a specific business capability.",
-    "term": "microservice"
+    "def": "Set of software techniques that automatically complete forms protected by a captcha.",
+    "term": "Captcha breaking"
   },
   {
-    "def": "A lightweight, isolated runtime environment for applications and their dependencies.",
-    "term": "container"
+    "def": "Inspects each packet for user-defined content (e.g., an IP address) without tracking session state.",
+    "term": "Packet filter"
   },
   {
-    "def": "An orchestration system for automating deployment, scaling, and management of containers.",
-    "term": "Kubernetes"
+    "def": "Computer crimes involving data modification to derive something of value.",
+    "term": "Computer fraud"
   },
   {
-    "def": "A software emulation of a physical computer that runs an operating system.",
-    "term": "virtual machine"
+    "def": "Method by which the sender gives proof of sending and the recipient is assured of the sender’s identity.",
+    "term": "Non-repudiation"
   },
   {
-    "def": "On-demand delivery of computing services over the internet with pay-as-you-go pricing.",
-    "term": "cloud computing"
+    "def": "Business strategy tool identifying Strengths, Weaknesses, Opportunities and Threats.",
+    "term": "SWOT analysis"
   },
   {
-    "def": "A physically separate data-center location within a cloud region.",
-    "term": "availability zone"
+    "def": "Forward-looking strategic plan that sets priorities and gives visibility on the organization’s ambitions.",
+    "term": "Master plan"
   },
   {
-    "def": "A geographic area containing multiple availability zones.",
-    "term": "region"
+    "def": "Graphic representation of an organization's processes and their sequence.",
+    "term": "Process mapping"
   },
   {
-    "def": "A distributed network of servers that delivers content from locations closer to users.",
-    "term": "content delivery network"
+    "def": "Software model based on distributed components with discovery, access control, data mapping and security.",
+    "term": "Service-oriented architecture (SOA)"
   },
   {
-    "def": "The time it takes for data to travel from source to destination.",
-    "term": "latency"
+    "def": "Cloud service model where the user accesses an application in rental mode.",
+    "term": "Software as a service (SaaS)"
   },
   {
-    "def": "The amount of data processed or transferred per unit of time.",
-    "term": "throughput"
+    "def": "Set of actions carried out by the system in interaction with actors for a purpose.",
+    "term": "Use case"
   },
   {
-    "def": "The maximum data transfer capacity of a network link.",
-    "term": "bandwidth"
+    "def": "Document that defines the framing of a project: needs, objectives, constraints, features, deadlines and budget.",
+    "term": "Scope statement"
   },
   {
-    "def": "A Service Level Agreement that defines promised service performance and penalties.",
-    "term": "SLA"
+    "def": "End of a stage or a piece of work in project management.",
+    "term": "Milestones"
   },
   {
-    "def": "A Service Level Objective that expresses the target level of reliability or performance.",
-    "term": "SLO"
+    "def": "Ordered list(s) of operations whose total duration gives the project duration.",
+    "term": "Critical path method (CPM)"
   },
   {
-    "def": "A fast storage layer that holds frequently accessed data to speed up retrieval.",
-    "term": "cache"
+    "def": "Ensures the project follows the schedule and that resources are well defined and used wisely.",
+    "term": "Project progress monitoring"
   },
   {
-    "def": "A component that stores messages so they can be processed asynchronously.",
-    "term": "message queue"
+    "def": "Group that can influence or be influenced by the achievement of a company's goals.",
+    "term": "Stakeholders"
   },
   {
-    "def": "A messaging pattern where publishers send events to topics and subscribers receive them.",
-    "term": "publish-subscribe"
+    "def": "Executives responsible for ensuring the smooth running of a project within a company.",
+    "term": "Steering committee"
   },
   {
-    "def": "A technique that restricts the number of requests a client can make in a given time.",
-    "term": "rate limiting"
+    "def": "Formal procedure to generate competing offers from suppliers/contractors.",
+    "term": "Invitation to tender (ITT)"
   },
   {
-    "def": "The Domain Name System that translates human-readable names into IP addresses.",
-    "term": "DNS"
+    "def": "Technique to optimize choices from an economic perspective and focus on real customer needs.",
+    "term": "Value analysis"
   },
   {
-    "def": "The Dynamic Host Configuration Protocol that automatically assigns IP configuration to devices.",
-    "term": "DHCP"
+    "def": "Unpredictable turn that an event can take.",
+    "term": "Hazard"
   },
   {
-    "def": "A Virtual Private Network that creates an encrypted tunnel over an untrusted network.",
-    "term": "VPN"
+    "def": "Partial or complete representation of a system/object used to test and validate aspects/behavior.",
+    "term": "Mock-up"
   },
   {
-    "def": "Multi-Factor Authentication requiring two or more verification factors to sign in.",
-    "term": "MFA"
+    "def": "Diagram representing responsibilities of each member for each task of a project.",
+    "term": "Organizational Breakdown Structure (OBS)"
   },
   {
-    "def": "Single Sign-On allowing a user to access multiple applications with one login.",
-    "term": "SSO"
+    "def": "Act by which an act in progress is amended by correcting, removing, or adding provisions.",
+    "term": "Endorsement"
   },
   {
-    "def": "A security model that assumes no implicit trust and verifies every access request.",
-    "term": "zero trust"
+    "def": "Review with the entire team at several stages via intermediate evaluations and a final assessment.",
+    "term": "Project assessment"
   },
   {
-    "def": "Identity and Access Management: processes and tools to manage identities and permissions.",
-    "term": "IAM"
+    "def": "Organization that implements practices to keep up with its ecosystem.",
+    "term": "Learning organization"
   },
   {
-    "def": "Role-Based Access Control where permissions are granted to roles rather than individuals.",
-    "term": "RBAC"
+    "def": "Network enabling delivery of products/services from raw materials to end customers.",
+    "term": "Supply chain"
   },
   {
-    "def": "The practice of securely storing and rotating credentials, keys, and tokens.",
-    "term": "secret management"
+    "def": "Systematic monitoring of latest techniques and their commercial availability.",
+    "term": "Technological watch"
   },
   {
-    "def": "A release strategy that switches traffic between two identical environments.",
-    "term": "blue-green deployment"
+    "def": "Acronym describing volatility, uncertainty, complexity and ambiguity of conditions/situations.",
+    "term": "VUCA"
   },
   {
-    "def": "A strategy that exposes a small subset of users to a new version to reduce risk.",
-    "term": "canary release"
+    "def": "Set of rules for the distribution of authority, tasks, control and coordination.",
+    "term": "Organizational structure"
   },
   {
-    "def": "An automated pipeline for Continuous Integration and Continuous Delivery/Deployment.",
-    "term": "CI/CD pipeline"
+    "def": "Operations carried out to enable an organization to adapt to change and its environment.",
+    "term": "Change management"
   }
 ];

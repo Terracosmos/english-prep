@@ -5,25 +5,25 @@ mots,Exploitation des réseaux,Network operation,
 mots,Réseaux et télécoms,Networks and telecoms,
 mots,Infrastructure de systèmes,System infrastructure,
 mots,Parc informatique,IT stock,
-mots,Service,Help desk,
+mots,Service d’assistance,Help desk,
 mots,Application client-serveur,Client-server application,
-mots,Installer / Désinstaller,To install;To uninstall,
+mots,Installer / Désinstaller,To install / To uninstall,
 mots,Redémarrer,To reboot,
-mots,Surveillance,Monitoring;Supervision,
+mots,Surveillance,Monitoring / Supervision,
 mots,Panneau de configuration,Control panel,
 mots,Paramètres,Settings,
 mots,Logiciel,Software,
 mots,Matériel informatique,Hardware,
 mots,Imprimante,Printer,
 mots,Utilisateur,User,
-mots,Serveur,Server;Host,
+mots,Serveur,Server / Host,
 mots,Sauvegarde,Backup,
 mots,Base de données,Database,
 mots,Flux de données,Data flow,
 mots,Stockage de données,Data storage,
 mots,Sécurité des données,Data safety,
 mots,Saisie des données,Data recording,
-mots,Restauration des données,Data recovery;restoration,
+mots,Restauration des données,Data recovery / restoration,
 mots,Nettoyage des données,Data cleansing,
 mots,Exploration de données,Data mining,
 mots,Centre de données,Data center,
@@ -31,6 +31,9 @@ mots,Virtualisation des serveurs,Server virtualization,
 mots,Machine virtuelle,Virtual machine,
 mots,Apprentissage automatique,Machine learning,
 mots,Equipement téléphonique,Phone equipment,
+mots,Gestion des accès,Access management,
+mots,Bande passante,Bandwidth,
+mots,Système de messagerie collaborative,Collaborative messaging system,
 mots,Invite de commande,Command prompt,
 mots,Poste de travail,Workstation,
 mots,Carte mémoire,Memory card,
@@ -38,114 +41,114 @@ mots,Carte mère,Motherboard,
 mots,Carte son,Sound card,
 mots,Processeur central,Central processing unit,
 mots,Processeur graphique,Graphics processing unit,
-mots,Microprocesseur,Microprocessor;Microchip,
+mots,Microprocesseur,Microprocessor / Microchip,
 mots,Système d’exploitation,Operating system,
 mots,Routeur,Router,
 mots,Gestionnaire de périphérique,Device manager,
 mots,Mémoire vive,Random access memory (RAM),
 mots,Répertoire racine,Root directory,
 mots,Exécuter un programme,To run a program,
-mots,Protocole,Protocol,
-mots,Pare-feu,Firewall,
-mots,Nom d’utilisateur,Username,
-mots,Mot de passe,Password,
-expressions,mettre en production,deploy to production,
-expressions,faire un déploiement bleu vert,perform a blue green deployment,
-expressions,passer en maintenance,enter maintenance mode,
-expressions,redémarrer un service,restart a service,
-expressions,arrêter un service,stop a service,
-expressions,recharger la configuration,reload configuration,
-expressions,mettre à jour,update,
-expressions,corriger un bug,fix a bug,
-expressions,ouvrir un ticket,open a ticket,
-expressions,clôturer un ticket,close a ticket,
-expressions,documenter une procédure,document a procedure,
-expressions,escalader un incident,escalate an incident,
-expressions,résoudre un incident,resolve an incident,
-expressions,analyser la cause racine,perform root cause analysis,
-expressions,rédiger un post mortem,write a postmortem,
-expressions,effectuer une sauvegarde,perform a backup,
-expressions,restaurer une sauvegarde,restore a backup,
-expressions,vérifier l'intégrité des données,verify data integrity,
-expressions,chiffrer les données,encrypt data,
-expressions,déchiffrer les données,decrypt data,
-expressions,accorder un accès,grant access,
-expressions,révoquer un accès,revoke access,
-expressions,authentifier un utilisateur,authenticate a user,
-expressions,autoriser une requête,authorize a request,
-expressions,surveiller les logs,monitor logs,
-expressions,analyser des métriques,analyze metrics,
-expressions,tailer un fichier de log,tail a log file,
-expressions,déployer via pipeline ci,deploy via ci pipeline,
-expressions,Déclencher un pipeline,trigger a pipeline,
-expressions,annuler un pipeline,cancel a pipeline,
-expressions,exécuter des tests unitaires,run unit tests,
-expressions,exécuter des tests d'intégration,run integration tests,
-expressions,effectuer un test de charge,run a load test,
-expressions,purger le cache,purge the cache,
-expressions,invalider le cache,invalidate the cache,
-expressions,vider un bucket,empty a bucket,
-expressions,stocker des fichiers dans un bucket,store files in a bucket,
-expressions,créer une instance,create an instance,
-expressions,supprimer une instance,delete an instance,
-expressions,augmenter la taille d'une instance,increase instance size,
-expressions,réduire la taille d'une instance,decrease instance size,
-expressions,attacher un disque,attach a disk,
-expressions,détacher un disque,detach a disk,
-expressions,faire un snapshot,take a snapshot,
-expressions,créer une alerte,create an alert,
-expressions,paramétrer une alerte,configure an alert,
-expressions,basculer sur le serveur de secours,fail over to the standby server,
-expressions,revenir sur le serveur principal,fail back to the primary server,
-expressions,déployer une correction à chaud,deploy a hotfix,
-expressions,mettre hors service une application,decommission an application,
-definitions,,backup,"A copy of data stored separately to enable recovery after loss or corruption."
-definitions,,firewall,"A network security system that monitors and controls traffic based on predefined rules."
-definitions,,server,"A computer that provides services or resources to other computers over a network."
-definitions,,router,"A device that forwards data packets between networks."
-definitions,,switch,"A device that connects devices within the same network and forwards frames."
-definitions,,protocol,"A formal set of rules that define how data is transmitted and received."
-definitions,,encryption,"The process of encoding information so that only authorized parties can access it."
-definitions,,authentication,"The process of verifying the identity of a user or system."
-definitions,,"IP address","A unique numerical label assigned to a device connected to a network."
-definitions,,"domain name","A human-readable name that maps to an IP address."
-definitions,,"operating system","Software that manages hardware resources and provides services for applications."
-definitions,,database,"A system that organizes, stores, and retrieves structured information."
-definitions,,"load balancer","A component that distributes incoming traffic across multiple servers."
-definitions,,"high availability","Design that minimizes downtime through redundancy and failover."
-definitions,,"scale up","To increase resources (CPU/RAM/instances) on a system to handle greater load."
-definitions,,"roll back","To revert a system or deployment to a previous working state."
-definitions,,"decommission","To permanently retire a system or service from production."
-definitions,,incident,"An unplanned interruption or reduction in the quality of an IT service."
-definitions,,logs,"Records produced by applications or systems describing events or errors."
-definitions,,monitoring,"The practice of observing systems and metrics to detect issues."
-definitions,,API,"An interface that allows software components to communicate using defined requests and responses."
-definitions,,"microservice","A small, independently deployable service that owns a specific business capability."
-definitions,,container,"A lightweight, isolated runtime environment for applications and their dependencies."
-definitions,,Kubernetes,"An orchestration system for automating deployment, scaling, and management of containers."
-definitions,,"virtual machine","A software emulation of a physical computer that runs an operating system."
-definitions,,"cloud computing","On-demand delivery of computing services over the internet with pay-as-you-go pricing."
-definitions,,"availability zone","A physically separate data-center location within a cloud region."
-definitions,,region,"A geographic area containing multiple availability zones."
-definitions,,"content delivery network","A distributed network of servers that delivers content from locations closer to users."
-definitions,,latency,"The time it takes for data to travel from source to destination."
-definitions,,throughput,"The amount of data processed or transferred per unit of time."
-definitions,,bandwidth,"The maximum data transfer capacity of a network link."
-definitions,,SLA,"A Service Level Agreement that defines promised service performance and penalties."
-definitions,,SLO,"A Service Level Objective that expresses the target level of reliability or performance."
-definitions,,cache,"A fast storage layer that holds frequently accessed data to speed up retrieval."
-definitions,,"message queue","A component that stores messages so they can be processed asynchronously."
-definitions,,"publish-subscribe","A messaging pattern where publishers send events to topics and subscribers receive them."
-definitions,,"rate limiting","A technique that restricts the number of requests a client can make in a given time."
-definitions,,DNS,"The Domain Name System that translates human-readable names into IP addresses."
-definitions,,DHCP,"The Dynamic Host Configuration Protocol that automatically assigns IP configuration to devices."
-definitions,,VPN,"A Virtual Private Network that creates an encrypted tunnel over an untrusted network."
-definitions,,MFA,"Multi-Factor Authentication requiring two or more verification factors to sign in."
-definitions,,SSO,"Single Sign-On allowing a user to access multiple applications with one login."
-definitions,,"zero trust","A security model that assumes no implicit trust and verifies every access request."
-definitions,,IAM,"Identity and Access Management: processes and tools to manage identities and permissions."
-definitions,,RBAC,"Role-Based Access Control where permissions are granted to roles rather than individuals."
-definitions,,"secret management","The practice of securely storing and rotating credentials, keys, and tokens."
-definitions,,"blue-green deployment","A release strategy that switches traffic between two identical environments."
-definitions,,"canary release","A strategy that exposes a small subset of users to a new version to reduce risk."
-definitions,,"CI/CD pipeline","An automated pipeline for Continuous Integration and Continuous Delivery/Deployment."
+mots,Pile de protocoles,Protocol stack,
+
+expressions,Mettre en œuvre les solutions aux problématiques techniques,Implement solutions to technical problems,
+expressions,Choisir avec discernement des architectures performantes et sécurisées,Choose high-performance and secure architectures,
+expressions,Mener à bien les différentes évolutions du SI,Carry out the various developments in IS,
+expressions,"Respecter les contraintes de qualité de coûts et de délais","Meet quality, cost and time constraints",
+expressions,Être l’expert des infrastructures techniques de son SI,Be the expert on the technical infrastructure of your IS,
+expressions,Piloter un projet d’infrastructure systèmes et réseaux,Lead a systems and networks infrastructure project,
+expressions,Recueillir analyser et formaliser les besoins systèmes et réseaux de l’entreprise,Collect analyze and formalize the company's systems and networks needs,
+expressions,Assurer le maintien en condition opérationnelle du réseau et de l’architecture système de l’entreprise,Maintain the operational condition of the company's network and system architecture,
+expressions,Construire un cahier des charges,Build specifications,
+expressions,Modéliser l’architecture systèmes et réseaux,Modeling systems and networks architecture,
+expressions,Valider concevoir et mettre en œuvre les infrastructures systèmes et réseaux,Validate design and implement systems and networks infrastructure,
+expressions,Communiquer et promouvoir un projet informatique,Communicate and promote a computer project,
+expressions,Manager le service informatique et ses projets,Manage IT and its projects,
+expressions,Maintenir et sécuriser les infrastructures informatiques,Maintain and secure IT infrastructure,
+expressions,Analyser l’adéquation logiciel matériel et SI avec les besoins de l’entreprise,"Analyze how well software, hardware and the wider IT system fit the business needs",
+expressions,Rédiger les besoins pour les nouveaux systèmes informatiques,Write requirements for new IT systems,
+expressions,Aider à la mise en œuvre de systèmes informatiques,Help implement IT systems,
+expressions,Surveiller l’efficacité des systèmes informatiques,Monitor the effectiveness of IT systems,
+expressions,Animer une équipe,Lead a team,
+expressions,Accroître la performance et la réactivité de l’entreprise,Increase the company's performance and responsiveness,
+expressions,Écouter analyser et rédiger les besoins,Listen analyze and write needs,
+expressions,Être garant de la pérennité et de l’évolution des solutions,Guarantee the sustainability and evolution of solutions,
+expressions,Satisfaire les attentes du client,Meet client expectations,
+expressions,Analyser et identifier tous les problèmes potentiels,Analyze and identify any potential problems,
+expressions,Avoir de solides compétences pour le travail en équipe,Have strong team-working skills,
+expressions,Diriger des projets collaboratifs,Lead collaborative projects,
+expressions,Définir les étapes clés du cycle de vie du projet,Define key lifecycle milestones for the project,
+expressions,Être en mesure de gérer une liste de problèmes ou d’améliorations,Be able to manage a list of issues or improvements,
+expressions,Connecter différents appareils pour former des réseaux rapides et efficaces,Connect different devices together to form fast and efficient networks,
+expressions,Installer et configurer des réseaux et des systèmes informatiques,Install and configure computer networks and systems,
+expressions,Consulter les clients,Consult with clients,
+expressions,Spécifier les besoins du système,Specify system requirements,
+expressions,Concevoir des solutions,Design solutions,
+expressions,Budgétiser l’équipement,Budget for equipment,
+expressions,Assembler de nouveaux systèmes,Assemble new systems,
+expressions,Maintenir les logiciels et le matériel existants,Maintain existing software and hardware,
+expressions,Mettre à niveau les logiciels et le matériel obsolètes,Upgrade obsolete software and hardware,
+expressions,Surveiller les réseaux et les systèmes informatiques,Monitor computer networks and systems,
+expressions,Identifier comment améliorer les performances,Identify how performance can be improved,
+expressions,Travailler avec le personnel de support informatique,Work with IT support staff,
+expressions,Fournir l’administration et le support du réseau,Provide network administration and support,
+expressions,Rédiger et mettre à jour procédures et consignes d’exploitation / documentation,Write and update operating and documentation procedures and instructions,
+expressions,Effectuer un suivi des équipements,Track equipment,
+expressions,Sensibiliser les utilisateurs pour optimiser leur utilisation,Raise awareness among users to optimize their use,
+expressions,Conseiller la DSI sur l’utilisation des ressources du système,Advise the CIO on the use of system resources,
+expressions,Garantir l’optimisation des ressources systèmes,Ensure optimization for system resources,
+expressions,Assurer une veille technologique,Ensure a technological watch,
+expressions,Accompagner la stratégie de l’entreprise,Support the company's strategy,
+expressions,Se tenir informé des tendances en évolution rapide,Keep up to date with fast-changing trends,
+expressions,Être en mesure de s’adapter aux différentes situations,Be able to adapt oneself to different situations,
+expressions,Rechercher diagnostiquer les bugs,Troubleshooting,
+
+definitions,,Address spoofing,"Malicious action that involves deliberately using the address of another system instead of its own."
+definitions,,Botnet,"Network of zombie PCs remotely controlled by a hacker using bots to launch mass attacks."
+definitions,,Bruteforce,"Exhaustive search method that tests all possible combinations to find a password or key."
+definitions,,Buffer overflow,"Technique exploiting a vulnerability where a program does not properly verify the size of data it manipulates."
+definitions,,"Bug bounty","A program that allows people to receive recognition and compensation after reporting bugs, anomalies, exploits and vulnerabilities."
+definitions,,Encryption,"Cryptographic transformation of data producing a cryptogram."
+definitions,,Crack,"Hacking tool used to decode encrypted passwords."
+definitions,,"Denial of service attack (DDoS)","Parallelization of denial-of-service attacks carried out by multiple systems against a single victim system."
+definitions,,Flood,"Attack that sends a large stream of data or packets to saturate a victim."
+definitions,,"SQL injection","Attack that targets database-backed sites by passing parameters through SQL queries."
+definitions,,"Key loggers","Software or hardware used by a malicious user to capture what a person is typing on the keyboard."
+definitions,,Mailbot,"Malicious software that massively sends e-mail automatically without human intervention."
+definitions,,Phishing,"Fraudulent technique used by hackers to solicit sensitive personal or confidential information from Internet users."
+definitions,,Spam,"Unsolicited electronic communication, massively sent for advertising or dishonest purposes."
+definitions,,Ransomware,"An extortion form imposed by malicious code on a user of the system."
+definitions,,Rootkit,"Any program or set of programs used to conceal activity, malicious or not, on a machine."
+definitions,,"Fork bomb","Creates a large number of processes very quickly in order to saturate the process table of the operating system."
+definitions,,"Trojan horse","Seemingly useful and harmless program with hidden code to collect, exploit, falsify or destroy data illegally."
+definitions,,Vulnerability,"Weakness in security procedures, administrative controls, internal controls, and others."
+definitions,,"Web bug","Image-like tracker on a web page that measures traffic or collects information about the user."
+definitions,,Worm,"Program reproducing from machine to machine through network connections and information systems when it spreads."
+definitions,,"Captcha breaking","Set of software techniques that automatically complete forms protected by a captcha."
+definitions,,"Packet filter","Inspects each packet for user-defined content (e.g., an IP address) without tracking session state."
+definitions,,"Computer fraud","Computer crimes involving data modification to derive something of value."
+definitions,,"Non-repudiation","Method by which the sender gives proof of sending and the recipient is assured of the sender’s identity."
+definitions,,"SWOT analysis","Business strategy tool identifying Strengths, Weaknesses, Opportunities and Threats."
+definitions,,"Master plan","Forward-looking strategic plan that sets priorities and gives visibility on the organization’s ambitions."
+definitions,,"Process mapping","Graphic representation of an organization's processes and their sequence."
+definitions,,"Service-oriented architecture (SOA)","Software model based on distributed components with discovery, access control, data mapping and security."
+definitions,,"Software as a service (SaaS)","Cloud service model where the user accesses an application in rental mode."
+definitions,,"Use case","Set of actions carried out by the system in interaction with actors for a purpose."
+definitions,,"Scope statement","Document that defines the framing of a project: needs, objectives, constraints, features, deadlines and budget."
+definitions,,Milestones,"End of a stage or a piece of work in project management."
+definitions,,"Critical path method (CPM)","Ordered list(s) of operations whose total duration gives the project duration."
+definitions,,"Project progress monitoring","Ensures the project follows the schedule and that resources are well defined and used wisely."
+definitions,,Stakeholders,"Group that can influence or be influenced by the achievement of a company's goals."
+definitions,,"Steering committee","Executives responsible for ensuring the smooth running of a project within a company."
+definitions,,"Invitation to tender (ITT)","Formal procedure to generate competing offers from suppliers/contractors."
+definitions,,"Value analysis","Technique to optimize choices from an economic perspective and focus on real customer needs."
+definitions,,Hazard,"Unpredictable turn that an event can take."
+definitions,,"Mock-up","Partial or complete representation of a system/object used to test and validate aspects/behavior."
+definitions,,"Organizational Breakdown Structure (OBS)","Diagram representing responsibilities of each member for each task of a project."
+definitions,,Endorsement,"Act by which an act in progress is amended by correcting, removing, or adding provisions."
+definitions,,"Project assessment","Review with the entire team at several stages via intermediate evaluations and a final assessment."
+definitions,,"Learning organization","Organization that implements practices to keep up with its ecosystem."
+definitions,,"Supply chain","Network enabling delivery of products/services from raw materials to end customers."
+definitions,,"Technological watch","Systematic monitoring of latest techniques and their commercial availability."
+definitions,,VUCA,"Acronym describing volatility, uncertainty, complexity and ambiguity of conditions/situations."
+definitions,,"Organizational structure","Set of rules for the distribution of authority, tasks, control and coordination."
+definitions,,"Change management","Operations carried out to enable an organization to adapt to change and its environment."
